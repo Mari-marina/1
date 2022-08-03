@@ -3267,10 +3267,16 @@ details > summary::-webkit-details-marker {
     margin-bottom: 5px;
 }
 
-.wave_background {
+.wave {
     background-image: url(./../images/11111.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+
+@media all and (max-width: 950px) {
+    .wave {
+        background-image: none;
+    }
 }
 
 /* Slider */
