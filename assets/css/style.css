@@ -2462,7 +2462,7 @@ input::placeholder {
     content: "";
     position: absolute;
     background: url(./../images/long-waves.svg) no-repeat center;
-    width: 100%x;
+    width: 105%x;
     height: 100%;
     top: 0;
     left: 0;
