@@ -2472,6 +2472,11 @@ input::placeholder {
     box-sizing: border-box;
     width: 100%;
     max-width: 1400%;
+    width: 100vw;
+}
+
+.wave__backg {
+    width: 100vw;
 }
 
 .service__title {
