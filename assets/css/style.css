@@ -3279,6 +3279,19 @@ details > summary::-webkit-details-marker {
     }
 }
 
+.wave_backg {
+    background-image: none;
+}
+
+@media all and (max-width: 950px) {
+    .wave_backg {
+        display: block;
+        background-image: url(./../images/blue-wave.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
 /* Slider */
 .slick-slider {
     position: relative;
