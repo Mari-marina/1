@@ -2457,6 +2457,13 @@ input::placeholder {
     }
 }
 
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .wave__background_second {
+        background-image: url(./../images/long-waves.svg);
+        background-size: cover;
+    }
+}
+
 .wave__background_second-img {
     -o-object-fit: contain;
     object-fit: contain;
