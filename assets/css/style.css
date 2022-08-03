@@ -3637,6 +3637,11 @@ details > summary::-webkit-details-marker {
     justify-content: center;
 }
 
+.slick-next .slick-arrow {
+    height: 44px;
+    width: 44px;
+}
+
 /* Slider */
 .slick-loading .slick-list {
     background: #fff url("./ajax-loader.gif") center center no-repeat;
