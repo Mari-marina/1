@@ -2335,135 +2335,6 @@ input::placeholder {
     font-family: "Nunito Sans";
 }
 
-@media all and (-webkit-min-device-pixel-ratio: 0) {
-  /*Всё, что вы сюда напишете, будет работать только с -webkit-*/
-    .wave_background {
-        background-image: url(./../images/wave.svg);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        background-size: 1440px 100%;
-        background-position-x: center;
-    }
-}
-
-@media all and (-webkit-min-device-pixel-ratio: 0) and (min-width: 1441px) {
-    .wave_background {
-        background-size: 100% 100%;
-    }
-}
-
-@media all and (-webkit-min-device-pixel-ratio: 0) and (max-width: 950px) {
-    .wave_background {
-        background-image: none;
-    }
-}
-
-@media all and (-webkit-min-device-pixel-ratio: 0) {
-    .wave_background {
-        background-image: url(./../images/wave.svg);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        background-size: 1440px 100%;
-        background-position-x: center;
-    }
-}
-
-@media all and (-webkit-min-device-pixel-ratio: 0) and (min-width: 1441px) {
-    .wave_background {
-        background-size: 100% 100%;
-    }
-}
-
-@media all and (-webkit-min-device-pixel-ratio: 0) and (max-width: 950px) {
-    .wave_background {
-        background-image: none;
-    }
-}
-
-@media all and (-webkit-min-device-pixel-ratio: 0) {
-    .wave__background_second {
-        background-image: url(./../images/wave.svg);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        background-position-x: center;
-    }
-}
-
-@media all and (-webkit-min-device-pixel-ratio: 0) and (min-width: 1441px) {
-    .wave__background_second {
-        background-size: 100% 100%;
-    }
-}
-
-@media all and (-webkit-min-device-pixel-ratio: 0) and (max-width: 950px) {
-    .wave__background_second {
-        background-image: url(./../images/long-waves.svg);
-        background-size: 100% 100%;
-    }
-}
-
-.wave_background {
-    background-image: url(./../images/wave.svg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-size: 1440px 100%;
-    background-position-x: center;
-}
-
-@media all and (min-width: 1441px) {
-    .wave_background {
-        background-size: 100% 100%;
-    }
-}
-
-@media all and (max-width: 950px) {
-    .wave_background {
-        background-image: none;
-    }
-}
-
-.wave_background {
-    position: relative;
-}
-
-.wave__background_second {
-    position: relative;
-}
-
-.wave__backg {
-    width: 100vw;
-}
-
-.wave__background_second::before {
-    position: absolute;
-    content: "";
-    position: absolute;
-    background: url(./../images/walves-long.png) no-repeat center;
-    width: 105%x;
-    height: 100%;
-    top: 0;
-    left: 0;
-}
-
-@media all and (min-width: 950px) {
-    .wave__background_second::before {
-        background-image: url(./../images/11111.png);
-    }
-}
-
-@media all and (min-width: 950px) {
-    .wave__backg::before {
-        position: absolute;
-        content: "";
-        position: absolute;
-        background: url(./../images/blue-wave.svg) no-repeat center;
-        width: 105%x;
-        height: 100%;
-        top: 0;
-        left: 0;
-    }
-}
-
 .service__title {
     padding-top: 140px;
     max-width: 596px;
@@ -2519,19 +2390,6 @@ input::placeholder {
     .service__wrapper {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    }
-}
-
-.wave_backg {
-    background-image: none;
-}
-
-@media all and (max-width: 950px) {
-    .wave_backg {
-        display: block;
-        background-image: url(./../images/blue-wave.svg);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
     }
 }
 
@@ -3407,6 +3265,12 @@ details > summary::-webkit-details-marker {
 
 .footer__text {
     margin-bottom: 5px;
+}
+
+.wave_background {
+    background-image: url(./../images/11111.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 /* Slider */
