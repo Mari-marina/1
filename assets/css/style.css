@@ -2423,16 +2423,11 @@ input::placeholder {
 }
 
 .wave_background {
-    background-image: url(./../images/11111.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position-x: center;
+    position: relative;
 }
 
-@media all and (max-width: 950px) {
-    .wave_background {
-        background-image: none;
-    }
+.wave__background_second {
+    position: relative;
 }
 
 .wave__backg {
