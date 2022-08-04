@@ -3293,7 +3293,7 @@ details > summary::-webkit-details-marker {
 @media all and (max-width: 950px) {
     .wave_backg {
         display: block;
-        background-image: url(./../images/blue-wave.svg);
+        background-image: url(./../images/blue-wave.png);
         background-repeat: no-repeat;
         background-size: 100% 100%;
     }
