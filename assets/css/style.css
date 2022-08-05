@@ -3807,8 +3807,8 @@ details > summary::-webkit-details-marker {
 @media all and (max-width: 450px) {
     .partners__wrap .slick-next:before,
     .reviews__slider .slick-next:before {
-        height: 32px;
-        width: 32px;
+        height: 30px;
+        width: 30px;
     }
 }
 
@@ -3832,8 +3832,8 @@ details > summary::-webkit-details-marker {
 @media all and (max-width: 450px) {
     .partners__wrap .slick-prev:before,
     .reviews__slider .slick-prev:before {
-        height: 32px;
-        width: 32px;
+        height: 30px;
+        width: 30px;
     }
 }
 
