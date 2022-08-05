@@ -12,13 +12,13 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
     <!-- Add the slick-theme.css if you want default styling -->
     <link
       rel="stylesheet"
       type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
     <link rel="stylesheet" href="assets/css/style.min.css" />
     <title>gulp project</title>
@@ -174,7 +174,7 @@
         <div class="discounts__blocks">
           <div class="discounts__wrapper">
             <div class="discounts__wrap discounts__wrap_first">
-              <div class="discounts__block">
+              <div class="discounts__block_1">
                 <h4 class="discounts__wrap__subtitle">Бесплатно</h4>
                 <p class="discounts__wrap__text">2 бутыли воды</p>
                 <p class="discounts__wrap__text">+ механическая помпа *</p>
@@ -186,7 +186,7 @@
           </div>
           <div class="discounts__wrapper">
             <div class="discounts__wrap discounts__wrap_second">
-              <div class="discounts__block">
+              <div class="discounts__block_2">
                 <h4 class="discounts__wrap__subtitle">Скидка 50%</h4>
                 <p class="discounts__wrap__text">На электропомпу</p>
                 <p class="discounts__wrap__text">
@@ -200,7 +200,7 @@
           </div>
           <div class="discounts__wrapper">
             <div class="discounts__wrap discounts__wrap_third">
-              <div class="discounts__block">
+              <div class="discounts__block_3">
                 <h4 class="discounts__wrap__subtitle">Скидка 50%</h4>
                 <p class="discounts__wrap__text">На аренду кулера</p>
                 <p class="discounts__wrap__text">
@@ -259,7 +259,7 @@
                   <botton class="mobile__BTNtext two">ЗАКАЗАТЬ В ОФИС</botton>
                 </div>
 
-                <form action="" class="request__form-mobile">
+                <form action="" class="request__form-mobile active">
                   <input type="text" class="request__input" placeholder="Имя" />
                   <input
                     type="tel"
@@ -483,7 +483,7 @@
                 <p class="reviews__text_bottom">
                   Являюсь постоянным клиентом компании “Eden”. Вода всегда
                   отличного качества. Очень нравится отношение сотрудников
-                  компании к клиенту, а также сервис по доставке воды. Хочется
+                  компании к клиенту. Хочется
                   отметить водителя Шепиту Андрея - всегда пунктуален, опрятен,
                   вежлив, аккуратен в своей работе.
                 </p>
@@ -522,6 +522,38 @@
             <div class="partners__wrap__images">
               <img
                 class="partners__wrap__img"
+                src="./assets/images/medci.svg"
+                alt=""
+                class="partners__wrap__img"
+              />
+            </div>
+            <div class="partners__wrap__images">
+              <img
+                class="partners__wrap__img"
+                src="./assets/images/tinkoff.svg"
+                alt=""
+                class="partners__wrap__img"
+              />
+            </div>
+            <div class="partners__wrap__images">
+              <img
+                class="partners__wrap__img"
+                src="./assets/images/1.svg"
+                alt=""
+                class="partners__wrap__img"
+              />
+            </div>
+            <div class="partners__wrap__images">
+              <img
+                class="partners__wrap__img"
+                src="./assets/images/mts.svg"
+                alt=""
+                class="partners__wrap__img"
+              />
+            </div>
+            <div class="partners__wrap__images">
+              <img
+                class="partners__wrap__img"
                 src="./assets/images/partners/1.svg"
                 alt=""
                 class="partners__wrap__img"
@@ -538,7 +570,7 @@
             <div class="partners__wrap__images">
               <img
                 class="partners__wrap__img"
-                src="./assets/images/partners/3.svg"
+                src="./assets/images/partners/mosfilm.png"
                 alt=""
                 class="partners__wrap__img"
               />
@@ -700,10 +732,18 @@
                 class="order__input"
                 placeholder="Номер телефона"
               />
+
+              <label class="order__wrapper__first">
+                <input type="checkbox" name="radio" />
+                <span class="order__form__text"
+                  >Я подтверждаю свое согласие на обработку персональных
+                  данных</span
+                >
+              </label>
               <button class="production__btn">ЗАКАЗАТЬ ВОДУ</button>
             </form>
             <form action="" class="order__form_second">
-              <label>
+              <label class="order__wrapper__second">
                 <input type="checkbox" name="radio" />
                 <span class="order__form__text"
                   >Я подтверждаю свое согласие на обработку персональных
@@ -813,6 +853,7 @@
                     class="certificates__block__img"
                     src="./assets/images/attestation2.svg"
                     alt=""
+                    style="opacity: 0.5"
                   />
                 </div>
               </div>
@@ -843,6 +884,7 @@
                     class="certificates__block__img"
                     src="./assets/images/attestation1.svg"
                     alt=""
+                    style="opacity: 0.5"
                   />
                   <img
                     class="certificates__block__img"
@@ -888,6 +930,7 @@
           autoplay
           muted
           controls
+          loop
         ></video>
         <div class="production__container">
           <h5 class="production__subtitle">
@@ -997,7 +1040,7 @@
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                centerMode: true,
+                // centerMode: true,
               },
             },
           ],
