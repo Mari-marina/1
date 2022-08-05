@@ -19,7 +19,6 @@ if (document.querySelector(".icon-menu")) {
   });
 }
 
-
 // if (document.querySelector(".main__wrapper")) {
 //   document.querySelector(".main__wrapper").addEventListener("click", function (e) {
 //     document.querySelector("body").classList.toggle("lock");
@@ -52,15 +51,16 @@ mm.addEventListener("click", function (e) {
 // });
 
 formBtn.addEventListener("click", function (e) {
+  formBtn.classList.add("clicked");
+  formBtn2.classList.remove("clicked");
   form2.classList.remove("active");
   form1.classList.add("active");
 });
 formBtn2.addEventListener("click", function (e) {
+  formBtn2.classList.add("clicked");
+  formBtn.classList.remove("clicked");
   form2.classList.add("active");
   form1.classList.remove("active");
 });
-
-
-
 
 //# sourceMappingURL=script.js.map
