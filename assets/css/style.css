@@ -2939,6 +2939,8 @@ details > summary {
     max-width: 1160px;
     width: 100%;
     border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -khtml-border-radius: 20px;
 }
 
 @media all and (max-width: 600px) {
@@ -2970,6 +2972,7 @@ details > summary:focus {
     outline: solid 2px #f1a039;
     border-radius: 20px !important;
     -webkit-border-radius: 20px !important;
+    -khtml-border-radius: 20px;
 }
 
 details > summary::-webkit-details-marker {
