@@ -2969,6 +2969,7 @@ details[open] img {
 details > summary:focus {
     outline: solid 2px #f1a039;
     border-radius: 20px !important;
+    -webkit-border-radius: 20px !important;
 }
 
 details > summary::-webkit-details-marker {
