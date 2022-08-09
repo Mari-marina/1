@@ -1553,7 +1553,6 @@ body.lock {
 }
 
 .benefits__wrap {
-    background: url(./../images/benefits/1.svg) no-repeat center;
     max-width: 400px;
     width: 100%;
     display: -ms-flexbox;
@@ -1648,7 +1647,7 @@ body.lock {
 }
 
 .benefits__wrap:first-child {
-    background: url(./../images/benefits/1.svg) no-repeat center;
+    background: url(./../images/benefits/1.webp) no-repeat center;
     grid-area: 1/1/4/2;
 }
 
@@ -1670,7 +1669,7 @@ body.lock {
 }
 
 .benefits__wrap:nth-child(3) {
-    background: url(./../images/benefits/3.svg) no-repeat center;
+    background: url(./../images/benefits/3.webp) no-repeat center;
     grid-area: 1/3/4/4;
 }
 
@@ -1681,7 +1680,7 @@ body.lock {
 }
 
 .benefits__wrap:nth-child(4) {
-    background: url(./../images/benefits/4.svg) no-repeat center;
+    background: url(./../images/benefits/4.webp) no-repeat center;
     grid-area: 4/1/7/2;
 }
 
@@ -1692,7 +1691,7 @@ body.lock {
 }
 
 .benefits__wrap:nth-child(5) {
-    background: url(./../images/benefits/5.svg) no-repeat center;
+    background: url(./../images/benefits/5.webp) no-repeat center;
     grid-area: 4/2/7/3;
 }
 
@@ -1703,7 +1702,7 @@ body.lock {
 }
 
 .benefits__wrap:nth-child(6) {
-    background: url(./../images/benefits/6.svg) no-repeat center;
+    background: url(./../images/benefits/6.webp) no-repeat center;
     grid-area: 4/3/7/4;
 }
 
@@ -3758,7 +3757,7 @@ details > summary::-webkit-details-marker {
 
 @media all and (max-width: 950px) {
     .wave__background_second {
-        background-image: url(./../images/long-waves.png);
+        background-image: url(./../images/long-waves.webp);
         background-size: 100% 100%;
     }
 }
