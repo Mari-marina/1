@@ -415,6 +415,11 @@ label {
     box-sizing: border-box;
 }
 
+.logo {
+    max-width: 104px;
+    width: 100%;
+}
+
 h2 {
     font-family: 'Nunito Sans';
     font-size: 36px;
@@ -1164,6 +1169,12 @@ body.lock {
 .nav__mobile__logo {
     position: relative;
     z-index: 12;
+}
+
+@media (max-width: 991.98px) {
+    .nav__mobile__logo {
+        max-width: 100px;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -2354,6 +2365,16 @@ body.lock {
     }
 }
 
+.request__input_white {
+    color: #ffffff;
+}
+
+@media all and (max-width: 950px) {
+    .request__input_white {
+        color: #121212;
+    }
+}
+
 .request__form__text {
     color: #ffffff;
     font-size: 15px;
@@ -3115,6 +3136,10 @@ details > summary::-webkit-details-marker {
     .order__input {
         height: 46px;
     }
+}
+
+.order__input_white {
+    color: #ffffff;
 }
 
 .order__btn, .order__btn_second {
