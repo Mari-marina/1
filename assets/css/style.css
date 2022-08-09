@@ -710,7 +710,7 @@ body.lock {
 
 .main__wrapper {
     padding-top: 60px;
-    background-image: url(./../images/bacg.svg);
+    background-image: url(./../images/bacg.webp);
     background-repeat: no-repeat;
     background-size: 56% 100%;
 }
@@ -1804,7 +1804,7 @@ body.lock {
     display: flex;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    background-image: url(./../images/bottles.svg);
+    background-image: url(./../images/bottles.webp);
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: 15% 7%;
@@ -1989,7 +1989,7 @@ body.lock {
 
 .discounts__wrapper:nth-child(3) {
     background: #2271c5;
-    background-image: url(./../images/cooler.png);
+    background-image: url(./../images/cooler.webp);
     background-size: 57%;
     background-repeat: no-repeat;
     background-position: 115% 37%;
@@ -3717,7 +3717,7 @@ details > summary::-webkit-details-marker {
 }
 
 .wave {
-    background-image: url(./../images/11111.png);
+    background-image: url(./../images/11111.webp);
     background-repeat: no-repeat;
     background-size: 1440px 100%;
     background-position-x: center;
@@ -3742,14 +3742,14 @@ details > summary::-webkit-details-marker {
 @media all and (max-width: 950px) {
     .wave_backg {
         display: block;
-        background-image: url(./../images/blue-wave.png);
+        background-image: url(./../images/blue-wave.webp);
         background-repeat: no-repeat;
         background-size: 100% 100%;
     }
 }
 
 .wave__background_second {
-    background-image: url(./../images/11111.png);
+    background-image: url(./../images/11111.webp);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position-x: center;
