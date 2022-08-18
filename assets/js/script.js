@@ -75,3 +75,6 @@ function myFunction() {
   element.classList.remove("slick-slide");
 };
 
+
+
+
