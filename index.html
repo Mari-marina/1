@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="description" content=""/>
-    <meta name="keywords" content=""/>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
@@ -24,8 +24,13 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
-    <link rel="stylesheet" href="assets/css/style.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Eden</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script language="javascript">
+      jQuery.noConflict();
+      var $ = jQuery;
+    </script>
   </head>
 
   <body>
@@ -35,7 +40,11 @@
           <div class="header__container">
             <header class="header" id="top">
               <div class="header__nav nav">
-                <img class="logos logo" src="./assets/images/logo.svg" alt="logo" />
+                <img
+                  class="logos logo"
+                  src="./assets/images/logo.svg"
+                  alt="logo"
+                />
                 <ul class="nav__list menu">
                   <li class="nav__item">
                     <a class="nav__link" href="#discounts">Новым клиентам</a>
@@ -88,27 +97,28 @@
       </div>
       <div class="main__wrapper">
         <div class="container">
-        <div class="main__block">
-          <div class="main__wrap">
-            <h1 class="main__title">
-              <span class="main__title_small"
-                >ДОСТАВКА ВОДЫ В МОСКВЕ И ОБЛАСТИ</span
+          <div class="main__block">
+            <div class="main__wrap">
+              <h1 class="main__title">
+                <span class="main__title_small"
+                  >ДОСТАВКА ВОДЫ В МОСКВЕ И ОБЛАСТИ</span
+                >
+                <br />
+                <span class="main__title_big">ДЛЯ НОВЫХ КЛИЕНТОВ:</span><br />
+                <span class="main__title_small-blue"
+                  >ВОДА, ПОМПА И ДОСТАВКА</span
+                ><br />
+                <span class="main__title_orange">БЕСПЛАТНО!</span>
+              </h1>
+              <a href="#request"
+                ><button class="main__button">ЗАКАЗАТЬ ВОДУ</button></a
               >
-              <br />
-              <span class="main__title_big">ДЛЯ НОВЫХ КЛИЕНТОВ:</span><br />
-              <span class="main__title_small-blue">ВОДА, ПОМПА И ДОСТАВКА</span
-              ><br />
-              <span class="main__title_orange">БЕСПЛАТНО!</span>
-            </h1>
-            <a href="#request"
-              ><button class="main__button">ЗАКАЗАТЬ ВОДУ</button></a
-            >
-          </div>
-          <div class="main__image">
-            <img class="main__img" src="./assets/images/main3.webp" alt="" />
+            </div>
+            <div class="main__image">
+              <img class="main__img" src="./assets/images/main3.webp" alt="" />
+            </div>
           </div>
         </div>
-      </div>
       </div>
     </main>
     <section class="benefits" id="benefits">
@@ -236,55 +246,6 @@
             <!--тут форма drupal-->
             <div id="get-a-quote-form" class="whatever"></div>
             <div class="request__wrapper" id="req">
-              <div class="descktop">
-                <form method="post" action="/ajax/get_quote_form/75612" class="request__form_first">
-                  <input
-                    type="text"
-                    class="request__input request__input_white"
-                    placeholder="Ваше имя"
-                    name="submitted[name]"
-                  />
-                  <input
-                    type="tel"
-                    class="request__input request__input_white"
-                    placeholder="Номер телефона"
-                    name="submitted[phone]"
-                  />
-                  <input
-                          type="hidden"
-                          name="submitted[post_code]"
-                          value="заглушка город"
-                  />
-                  <input
-                          type="hidden"
-                          name="submitted[name_of_the_company]"
-                          value="заглушка компания"
-                  />
-                  <input
-                          type="hidden"
-                          name="submitted[e_mail]"
-                          value="заглушка почта"
-                  />
-                  <input
-                          type="hidden"
-                          name="submitted[topic]"
-                          value="заглушка Колличество сотрудников"
-                  />
-                  <button class="request__btn">ЗАКАЗАТЬ ВОДУ</button>
-                </form>
-                <div action="" class="request__form_second">
-                  <label>
-                    <input type="checkbox" name="radio" />
-                    <span class="request__form__text"
-                      >Я подтверждаю свое согласие на обработку персональных
-                      данных</span
-                    >
-                  </label>
-                  <!-- <input type="radio" class="request__radioButton">
-                        <p class="request__form__text">Я подтверждаю свое согласие на обработку персональных данных
-                        </p> -->
-                </div>
-              </div>
               <div class="mobile">
                 <div class="mobile__wrap">
                   <botton class="mobile__BTNtext clicked"
@@ -294,33 +255,42 @@
                   <botton class="mobile__BTNtext two">Заказать в офис</botton>
                 </div>
 
-                <form method="post" action="/ajax/get_quote_form/75612" class="request__form-mobile active">
-                  <input type="text"  class="request__input" placeholder="Имя" name="submitted[name]" />
+                <form
+                  method="post"
+                  action="/ajax/get_quote_form/75612"
+                  class="request__form-mobile active"
+                >
                   <input
-                          type="tel"
-                          class="request__input"
-                          placeholder="Номер телефона"
-                          name="submitted[phone]"
+                    type="text"
+                    class="request__input"
+                    placeholder="Имя"
+                    name="submitted[name]"
                   />
                   <input
-                          type="hidden"
-                          name="submitted[post_code]"
-                          value="заглушка город"
+                    type="tel"
+                    class="request__input"
+                    placeholder="Номер телефона"
+                    name="submitted[phone]"
                   />
                   <input
-                          type="hidden"
-                          name="submitted[name_of_the_company]"
-                          value="заглушка компания"
+                    type="hidden"
+                    name="submitted[post_code]"
+                    value="заглушка город"
                   />
                   <input
-                          type="hidden"
-                          name="submitted[e_mail]"
-                          value="заглушка почта"
+                    type="hidden"
+                    name="submitted[name_of_the_company]"
+                    value="заглушка компания"
                   />
                   <input
-                          type="hidden"
-                          name="submitted[topic]"
-                          value="заглушка Колличество сотрудников"
+                    type="hidden"
+                    name="submitted[e_mail]"
+                    value="заглушка почта"
+                  />
+                  <input
+                    type="hidden"
+                    name="submitted[topic]"
+                    value="заглушка Колличество сотрудников"
                   />
                   <!-- <div action="" class="request__form_second-mobile">
                                 <input type="radio" class="request__radioButton-mobile">
@@ -329,51 +299,61 @@
                                     данных</p>
                             </div> -->
 
-                  <label class="request__form_second-mobile">
-                    <input type="checkbox" name="checkbox" />
-                    <span class="request__form__text-mobile"
-                      >Я подтверждаю свое согласие на обработку персональных
-                      данных</span
-                    >
-                  </label>
-
-                  <button class="request__btn">ЗАКАЗАТЬ ВОДУ</button>
+                  <div class="form-desc-con">
+                    <label class="request__form_second-mobile">
+                      <input type="checkbox" name="checkbox" />
+                      <span class="request__form__text-mobile"
+                        >Я подтверждаю свое согласие на обработку персональных
+                        данных</span
+                      >
+                    </label>
+                    <button class="request__btn">ЗАКАЗАТЬ ВОДУ</button>
+                  </div>
                 </form>
-                <form method="post" action="/ajax/get_quote_form/75612" class="request__form-mobile two">
-                  <input type="text" class="request__input" placeholder="ФИО" name="submitted[name]" />
+                <form
+                  method="post"
+                  action="/ajax/get_quote_form/75612"
+                  class="request__form-mobile two"
+                >
                   <input
-                          type="tel"
-                          class="request__input"
-                          placeholder="Номер телефона"
-                          name="submitted[phone]"
+                    type="text"
+                    class="request__input"
+                    placeholder="ФИО"
+                    name="submitted[name]"
                   />
                   <input
-                          type="text"
-                          class="request__input"
-                          placeholder="Город"
-                          name="submitted[post_code]"
-                          value="заглушка город"
+                    type="tel"
+                    class="request__input"
+                    placeholder="Номер телефона"
+                    name="submitted[phone]"
                   />
                   <input
-                          type="text"
-                          class="request__input"
-                          placeholder="Компания"
-                          name="submitted[name_of_the_company]"
-                          value="заглушка компания"
+                    type="text"
+                    class="request__input"
+                    placeholder="Город"
+                    name="submitted[post_code]"
+                    value="заглушка город"
                   />
                   <input
-                          type="text"
-                          class="request__input"
-                          placeholder="Почта"
-                          name="submitted[e_mail]"
-                          value="заглушка почта"
+                    type="text"
+                    class="request__input"
+                    placeholder="Компания"
+                    name="submitted[name_of_the_company]"
+                    value="заглушка компания"
                   />
                   <input
-                          type="text"
-                          class="request__input"
-                          placeholder="Колличество сотрудников"
-                          name="submitted[topic]"
-                          value="заглушка Колличество сотрудников"
+                    type="text"
+                    class="request__input"
+                    placeholder="Почта"
+                    name="submitted[e_mail]"
+                    value="заглушка почта"
+                  />
+                  <input
+                    type="text"
+                    class="request__input"
+                    placeholder="Колличество сотрудников"
+                    name="submitted[topic]"
+                    value="заглушка Колличество сотрудников"
                   />
 
                   <!-- <div action="" class="request__form_second-mobile">
@@ -383,15 +363,16 @@
                                     данных</p>
                             </div> -->
 
-                  <label class="request__form_second-mobile">
-                    <input type="checkbox" name="checkbox" />
-                    <span class="request__form__text-mobile"
-                      >Я подтверждаю свое согласие на обработку персональных
-                      данных</span
-                    >
-                  </label>
-
-                  <button class="request__btn">ЗАКАЗАТЬ ВОДУ</button>
+                  <div class="form-desc-con">
+                    <label class="request__form_second-mobile">
+                      <input type="checkbox" name="checkbox" />
+                      <span class="request__form__text-mobile"
+                        >Я подтверждаю свое согласие на обработку персональных
+                        данных</span
+                      >
+                    </label>
+                    <button class="request__btn">ЗАКАЗАТЬ ВОДУ</button>
+                  </div>
                 </form>
               </div>
             </div>
@@ -777,10 +758,11 @@
       <!-- <img class="wave__background_second-img" src="./assets/images/11111.png" alt=""> -->
       <section class="order">
         <div class="container">
-          <h2 class="order__title title">Закажите воду в несколько кликов</h2>
           <div class="order__wrapper">
-            <form method="post" action="/ajax/get_quote_form/75612" class="order__form_first">
-              <input type="text" class="order__input order__input_white" placeholder="Ваше имя" name="submitted[name]" />
+            <h2 class="order__title title">Закажите воду в несколько кликов</h2>
+
+            <!-- <form method="post" action="/ajax/get_quote_form/75612" class="order__form_first"> -->
+            <!-- <input type="text" class="order__input order__input_white" placeholder="Ваше имя" name="submitted[name]" />
               <input
                 type="tel"
                 class="order__input order__input_white"
@@ -813,10 +795,11 @@
                   >Я подтверждаю свое согласие на обработку персональных
                   данных</span
                 >
-              </label>
-              <button class="production__btn">ЗАКАЗАТЬ ВОДУ</button>
-            </form>
-            <form method="post" action="/ajax/get_quote_form/75612" class="order__form_second">
+              </label> -->
+
+            <!-- </form> -->
+
+            <!-- <form method="post" action="/ajax/get_quote_form/75612" class="order__form_second">
               <label class="order__wrapper__second">
                 <input type="checkbox" name="radio" />
                 <span class="order__form__text"
@@ -824,7 +807,10 @@
                   данных</span
                 >
               </label>
-            </form>
+            </form> -->
+            <a href="#request">
+              <button class="production__btn">ЗАКАЗАТЬ ВОДУ</button>
+            </a>
           </div>
         </div>
       </section>
@@ -1008,18 +994,20 @@
         ></video>
         <!-- <iframe  max-width="1159" width="100%" height="569" src="https://www.youtube.com/embed/oHg5SJYRHA0?rel=0&autoplay=1
         " frameborder="0"  allowfullscreen></iframe> -->
-        
-        
+
         <div class="production__container">
           <h5 class="production__subtitle">
             Запишитесь на экскурсию на фабрику Eden Springs!
+            <a href="tel:+74951518763" class="production__phone">
+              +7 (495) 151-87-63
+            </a>
           </h5>
           <p class="production__text_bottom">
             Eden-открытая компания, мы гордимся своим качеством и готовы
             показать вам весь цикл по производству идеально чистой питьевой
             воды.
           </p>
-          <form method="post" action="/ajax/get_quote_form/75612" class="production__form">
+          <!-- <form method="post" action="/ajax/get_quote_form/75612" class="production__form">
             <input
               type="text"
               class="production__input"
@@ -1054,7 +1042,7 @@
                     value="заглушка Колличество сотрудников"
             />
             <button class="production__btn">ОСТАВИТЬ ЗАЯВКУ</button>
-          </form>
+          </form> -->
         </div>
       </div>
     </section>
@@ -1063,7 +1051,10 @@
         <div class="footer__wrapper">
           <div class="footer__wrap">
             <a href="#top"
-              ><img src="./assets/images/logo.svg" alt="" class="footer__logo logo"
+              ><img
+                src="./assets/images/logo.svg"
+                alt=""
+                class="footer__logo logo"
             /></a>
             <p class="footer__text">© Eden Springs 2022г.</p>
             <a
@@ -1193,6 +1184,42 @@
           centerPadding: "40px",
         });
       });
+    </script>
+    <script type="text/javascript">
+      let divs = document.getElementsByTagName("div"),
+        invisible = document.getElementsByClassName("element-invisible");
+      divs[61].parentNode.appendChild(divs[53]);
+      document.querySelector("form > div").classList.add("request__form_first");
+      document
+        .querySelector(".webform-client-form.webform-client-form-28574")
+        .classList.add("request__form_first");
+      document
+        .querySelector("#get-a-quote-form #edit-submitted-name")
+        .classList.add("request__input");
+      document
+        .querySelector("#edit-submitted-phone")
+        .classList.add("request__input");
+      document.getElementById("edit-submitted-name-of-the-company").value =
+        "заглушка компании";
+      document.getElementById("edit-submitted-name-of-the-company").type =
+        "hidden";
+      document.getElementById("edit-submitted-e-mail").value = "заглушка почта";
+      document.getElementById("edit-submitted-e-mail").type = "hidden";
+      for (let i = 0; i < invisible.length; i++) {
+        invisible[i].style.display = "none";
+      }
+      document.getElementById("edit-submitted-post-code").hidden = "true";
+      document.getElementById("edit-submitted-topic").hidden = "true";
+      document.querySelector(".form-actions").outerHTML =
+        '<button  type="submit" id="edit-submit" name="op" value="Отправить">ЗАКАЗАТЬ ВОДУ';
+      document.querySelector("#edit-submit").classList.add("request__btn");
+      $(".webform-component--terms-conditions")[0].style.margin = "0 auto";
+      document
+        .querySelector(".form-item-submitted-terms-conditions")
+        .classList.add("request__form_second");
+      document.querySelector("label.option").style.margin = "0 0 0 10px";
+      document.querySelector("label.option").style.color = "#fff";
+      document.querySelector("ul.tab").style.display = "none";
     </script>
   </body>
 </html>
