@@ -64,3 +64,14 @@ formBtn2.addEventListener("click", function (e) {
 });
 
 //# sourceMappingURL=script.js.map
+
+
+function myFunction() {
+  var element = document.getElementsByClassName("service__wrap");
+  element.classList.remove("slick-slide");
+};
+function myFunction() {
+  var element = document.getElementsByClassName("service__wrap");
+  element.classList.remove("slick-slide");
+};
+
